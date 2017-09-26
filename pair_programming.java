@@ -20,7 +20,7 @@ class MatrixDG {
 }
 
 //图片到byte数组
-
+//add text here
 
 
 class ScaleIcon implements Icon {
@@ -112,7 +112,7 @@ public class pair_programming {
 		// 初始化"顶点数"和"边数"
 		int vlen = vex.length;
 		int elen = edges.length - 1;
-
+		elen = edges.length - 1;
 		// 初始化"顶点"
 		Graph.mVexs = new String[vlen];
 		for (int i = 0; i < Graph.mVexs.length; i++)
