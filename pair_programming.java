@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import javax.imageio.stream.FileImageInputStream;
 import javax.swing.*;
-
+//B1
 class MatrixDG {
 
 	public String[] mVexs; // ¶¥µã¼¯ºÏ
