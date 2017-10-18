@@ -1,4 +1,4 @@
-package src;
+package pkg;//NOPMD
 
 import java.awt.BorderLayout;
 
@@ -295,7 +295,6 @@ public class PairProgramming {
       }
     }
     graphViz.addln(graphViz.end_graph());
-
     graphViz.getDotSource();
     final String type = "png";
     final File out = new File("D:\\graphOut." + type);
@@ -427,7 +426,6 @@ public class PairProgramming {
    * main function.
    * @param args null
    */
-  @SuppressWarnings("resource")
   public static void main(final String[] args) {
     System.out.println("Please input the file name: ");
     Scanner input = new Scanner(System.in);
