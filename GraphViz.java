@@ -1,4 +1,4 @@
-package src;
+package pkg;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;

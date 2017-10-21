@@ -1,4 +1,4 @@
-package src;
+package pkg;
 
 import java.awt.Component;
 import java.awt.Graphics;
@@ -35,7 +35,7 @@ public class ScaleIcon implements Icon {
     int iconHei = icon.getIconHeight();
 
     Graphics2D g2d = (Graphics2D) g;
-    g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION, 
+    g2d.setRenderingHint(RenderingHints.KEY_INTERPOLATION,
         RenderingHints.VALUE_INTERPOLATION_BILINEAR);
     g2d.scale(wid / iconWid, hei / iconHei);
     icon.paintIcon(c, g2d, 0, 0);
