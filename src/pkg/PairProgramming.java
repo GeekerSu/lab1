@@ -118,15 +118,15 @@ public class PairProgramming {
     final int word2pos = getPosition(graph, word2);
     if (word1pos == -1) {
       if (word2pos == -1) {
-        System.out.println("No \"" + word1 + " \"and \"" + word2 + " \" in graph!");
-        return "";
+        //System.out.println("No \"" + word1 + " \"and \"" + word2 + " \" in graph!");
+        return "No \"" + word1 + "\" and \"" + word2 + "\" in graph!";
       } else {
-        System.out.println("No \"" + word1 + " \" in graph!");
-        return "";
+        //System.out.println("No \"" + word1 + " \" in graph!");
+        return "No \"" + word1 + "\" in graph!";
       }
     } else if (word2pos == -1) {
-      System.out.println("No \"" + word2 + " \" in graph!");
-      return "";
+      //System.out.println("No \"" + word2 + " \" in graph!");
+      return "No \"" + word2 + "\" in graph!";
     } else {
       for (int i = 0; i < graph.matrixVertex.length; i++) {
         if ((graph.adjacentMatrix[word1pos][i]) * (graph.adjacentMatrix[i][word2pos]) != 0) {
@@ -137,7 +137,7 @@ public class PairProgramming {
     }
     StringBuilder wordsReturnStr = new StringBuilder();
     if (bridgeWord) {
-      System.out.print("The bridge word from \"" + word1 + " \"to \"" + word2 + " \" :");
+      //System.out.print("The bridge word from \"" + word1 + " \"to \"" + word2 + " \" :");
       for (int i = 0; i < graph.matrixVertex.length; i++) {
         if (word3[i] == 1) {
           wordsReturnStr.append(graph.matrixVertex[i]);
@@ -145,9 +145,10 @@ public class PairProgramming {
         }
       }
     } else {
-      System.out.println("No bridge word from \"" + word1 + " \"to \"" + word2 + " \" !");
+      //System.out.println("No bridge word from \"" + word1 + " \"to \"" + word2 + " \" !");
+    	return	"No bridge word from \"" + word1 + "\" to \"" + word2 + "\" !";
     }
-    return wordsReturnStr.toString();
+    return "The bridge word from \"" + word1 + "\" to \"" + word2 + "\" :" + wordsReturnStr.toString();
   }
 
   /**
