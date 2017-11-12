@@ -255,7 +255,7 @@ public class PairProgramming {
     final int word1pos = getPosition(graph, word1);
     final int word2pos = getPosition(graph, word2);
     if (word1pos == -1 || word2pos == -1) {
-      System.out.println("There are not words in the graph");
+      System.out.println("There are no words in the graph");
       return "";
     }
     int pathScanner = path[word1pos][word2pos];
@@ -263,7 +263,7 @@ public class PairProgramming {
     if (pathScanner == -1) {
       System.out.println("There is no path" + "start word\"" + word1 + " \"to end word\"" + word2);
     } else {
-      if (word1pos != word2pos) {
+     
         System.out.print("The shortest distance" + "start word \"" + word1 
             + " \"end word \"" + word2 + " \"is ");
         wordsReturnStr.append(word1);
@@ -275,8 +275,7 @@ public class PairProgramming {
         wordsReturnStr.append("->");
         wordsReturnStr.append(word2);
         System.out.println(distance[word1pos][word2pos]);
-      }
-    }
+      } 
     return wordsReturnStr.toString();
   }
   
