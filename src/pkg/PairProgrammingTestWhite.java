@@ -13,8 +13,8 @@ public class PairProgrammingTestWhite {
 		String[] VexTest= VexOrigin.split(" ");
 		String EdgesOrigin ="to explore strange new worlds to seek out new life and new civilizations to get out";
 		String[] EdgesTest= EdgesOrigin.split(" ");
-		PairProgramming.createDirectedGraph(GraphTest, VexTest, EdgesTest);
-		String testresult = PairProgramming.calcShortestPath(GraphTest, "a", "strange");
+		createDirectedGraph.createDirectedGraph(GraphTest, VexTest, EdgesTest);
+		String testresult = calcShortestPath.calcShortestPath(GraphTest, "a", "strange");
 		assertEquals("",testresult);
 		
 	}
@@ -25,8 +25,8 @@ public class PairProgrammingTestWhite {
 		String[] VexTest= VexOrigin.split(" ");
 		String EdgesOrigin ="to explore strange new worlds to seek out new life and new civilizations to get out";
 		String[] EdgesTest= EdgesOrigin.split(" ");
-		PairProgramming.createDirectedGraph(GraphTest, VexTest, EdgesTest);
-		String testresult = PairProgramming.calcShortestPath(GraphTest, "to", "a");
+		createDirectedGraph.createDirectedGraph(GraphTest, VexTest, EdgesTest);
+		String testresult = calcShortestPath.calcShortestPath(GraphTest, "to", "a");
 		assertEquals("",testresult);
 		
 	}
@@ -37,8 +37,8 @@ public class PairProgrammingTestWhite {
 		String[] VexTest= VexOrigin.split(" ");
 		String EdgesOrigin ="to explore strange new worlds";
 		String[] EdgesTest= EdgesOrigin.split(" ");
-		PairProgramming.createDirectedGraph(GraphTest, VexTest, EdgesTest);
-		String testresult = PairProgramming.calcShortestPath(GraphTest, "new", "to");
+		createDirectedGraph.createDirectedGraph(GraphTest, VexTest, EdgesTest);
+		String testresult = calcShortestPath.calcShortestPath(GraphTest, "new", "to");
 		assertEquals("",testresult);
 		
 	}
@@ -50,8 +50,8 @@ public class PairProgrammingTestWhite {
 		String[] VexTest= VexOrigin.split(" ");
 		String EdgesOrigin ="to explore strange new worlds to seek out new life and new civilizations to get out";
 		String[] EdgesTest= EdgesOrigin.split(" ");
-		PairProgramming.createDirectedGraph(GraphTest, VexTest, EdgesTest);
-		String testresult = PairProgramming.calcShortestPath(GraphTest, "new", "worlds");
+		createDirectedGraph.createDirectedGraph(GraphTest, VexTest, EdgesTest);
+		String testresult = calcShortestPath.calcShortestPath(GraphTest, "new", "worlds");
 		assertEquals("new->worlds",testresult);
 		
 	}
@@ -62,8 +62,8 @@ public class PairProgrammingTestWhite {
 		String[] VexTest= VexOrigin.split(" ");
 		String EdgesOrigin ="to explore strange new worlds to seek out new life and new civilizations to get out";
 		String[] EdgesTest= EdgesOrigin.split(" ");
-		PairProgramming.createDirectedGraph(GraphTest, VexTest, EdgesTest);
-		String testresult = PairProgramming.calcShortestPath(GraphTest, "new", "seek");
+		createDirectedGraph.createDirectedGraph(GraphTest, VexTest, EdgesTest);
+		String testresult = calcShortestPath.calcShortestPath(GraphTest, "new", "seek");
 		assertEquals("new->worlds->to->seek",testresult);
 		
 	}
